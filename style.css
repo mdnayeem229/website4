@@ -1,0 +1,483 @@
+*{
+    padding: 0;
+margin: 0;
+border:none;
+outline: none;
+box-sizing: border-box;
+text-decoration: none;
+text-transform: capitalize;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+/*------------body start--------*/
+body{
+    color: #000;
+    background: #efefef;
+}
+/*------------body start--------*/
+header{
+    width: 100%;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+    background: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+.header-bg{
+    background: black;
+}
+.header-bg nav ul li a{
+    color: #fff;
+}
+header:hover{
+    background: black;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px;
+}
+header nav .logo img{
+width: 100%;
+}
+nav ul li{
+    display: inline;
+    list-style:none;
+}
+nav ul li a{
+    color: #706666;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+header:hover nav ul li a{
+    color: #fff;
+}
+nav ul li a:hover{
+    color: #fff;
+}
+.header-bg nav ul li a:hover{
+    color: #fff;
+}
+/*------------header end--------*/
+/*---------top to bottom scrollbar------------*/
+.to-top{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    background:#00A99D;
+    bottom:20px;
+    right:32px;
+    border-radius: 10px;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,0.1);
+    z-index: 1000;
+    font-size: 25px;
+    color:#fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    }
+    .to-top:hover{
+        color: var(--body-color);
+    }
+    .to-top-active{
+        opacity: 1;
+    pointer-events: auto;
+    }
+/*----------this is mobile screen---------*/
+.menu{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 0.5rem 0.7rem;
+    font-size: 1rem;
+z-index: 1000;
+cursor: pointer;
+display: none;
+}
+/*------------hero area start--------*/
+/*------------corousel start--------*/
+.carousel-img{
+    background:url('images/CFJRBgqUIAAxIyD.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.carousel-text{
+    width: 50%;
+    padding-top: 220px;
+    padding-left: 100px;
+}
+.carousel-text h1{
+    color: #00A99D;
+    font-size: 60px;
+    font-weight: 700;
+}
+.carousel-text p{
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.8em;
+    text-align: justify;
+    font-size: 1rem;
+}
+.carous-btn{
+    display: flex;
+    align-items: center;
+}
+.carous-btn .learn{
+    border: 2px solid #00A99D;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    background:#00A99D;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.carous-btn .get:hover{
+    color: #fff;
+    background: #00A99D;
+}
+.carous-btn .get{
+    margin-left: 40px;
+    background: none;
+    cursor: pointer;
+}
+.carous-btn .get i{
+    margin-left: 20px;
+}
+.carousel-second-img{
+    background:linear-gradient(rgba(0,0,0,0.1), #00A99D), url('images/rocc.download.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.second h1, .third h1{
+    color: #fff;
+}
+.carous-btn .get1{
+color: #fff;
+border: 2px solid #000;
+font-size: 1rem;
+font-family: 400;
+padding: 10px 20px;
+border-radius: 20px;
+background: none;
+margin-left: 40px;
+transition: 0.5s;
+}
+.carous-btn .get1:hover{
+    background: #000;
+}
+.carousel-third-img{
+    background:linear-gradient(rgba(0,0,0,0.1), #00A99D), url('images/ServiceDeskFPAC.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+/*------------our services--------*/
+.service{
+    margin: 100px auto;
+    width: 70%;
+    
+}
+.service h1{
+    text-align: center;
+    color: #00A99D;
+    font-weight: 700;
+    font-size: 35px;
+}
+.service p{
+    color:  #626262;
+    font-size: 1rem;
+    line-height: 1.6em;
+    font-weight: 400;
+}
+.service-text{
+    background: #fff;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+    color: #706666;
+    border-radius: 10px;
+    padding: 10px 20px;
+    padding-bottom: 20px;
+}
+.service-text h2{
+    text-align: center;
+    color: #000;
+    font-size: 25px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.service-text p{
+    text-align: justify;
+    color: #626262;
+    font-size: 1rem;
+    line-height: 1.6em;
+}
+.more-btn{
+    background: #00A99D;
+    color: #fff;
+    border: none;
+    outline:none;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin-top: -20px;
+}
+
+/*------------company img--------*/
+.company-img img{
+    padding-top: 100px;
+    padding-bottom: 100px;
+width: 100%;
+}
+/*------------About our company--------*/
+.about{
+    margin: 0px auto;
+    width: 70%;
+    padding-bottom: 100px;
+}
+.about h1{
+    text-align: center;
+    color: #00A99D;
+    font-weight: 700;
+    font-size: 35px;
+}
+.about-img img{
+    width: 100%;
+}
+.about-text h2{
+    font-size: 25px;
+    color: #000;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.about-text p{
+    color: #626262;
+    font-size: 1rem;
+    line-height: 1.7em;
+    text-align: justify;
+}
+/*------------newsletter--------*/
+.news{
+    width: 50%;
+    margin: 100px auto;
+}
+.news h1{
+    text-align: center;
+    color: #00A99D;
+    font-weight: 700;
+    font-size: 35px;
+}
+.news p{
+    color: #626262;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.news .input-mail{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 2px solid #00A99D;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.news .input-mail input{
+    width: 100%;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+.input-mail button{
+    color: #00A99D;
+    font-size: 1.2rem;
+padding-right: 1rem;
+}
+.mail-text span{
+    color: #626262;
+    font-size: 13px;
+font-weight: 300;
+margin-top: 20px;
+}
+.mail-text a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #00A99D;
+    margin-top: 50px;
+}
+/*------------contact--------*/
+.contactpage{
+    padding-top: 50px;
+}
+.contact img{
+    width: 200px;
+    height: 50px;
+}
+.contact-text{
+    padding-top: 20px;
+}
+.contact-text h3{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    margin-top: 20px;
+}
+.contact-text span{
+    color: #626262;
+    font-size: 14px;
+    font-weight: 400;
+}
+.contact-text a{
+text-decoration: none;
+margin-left: 10px ;
+margin-right: 10px;
+margin-top: 20px;
+}
+.contact-text i{
+    background: #00A99D;
+    padding: 10px 10px;
+    border-radius:50px;
+    color: #fff;
+    margin-top: 30px;
+}
+.contact-text-sign h3{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.contact-text-sign p{
+    font-size: 14px;
+    line-height: 1.5em;
+    padding-top: 20px;
+    color: #626262;
+}
+.contact-text-sign input{
+    border: 2px solid #00A99D;
+    outline: none;
+    background: none;
+    width: 100%;
+    display:block;
+    padding: 10px;
+    border-radius: 10px;
+}
+.contact-text-sign span{
+    color: #626262;
+    font-weight: 400;
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 771px){
+    header nav .logo img{
+        width: 80%;
+        }
+
+    .menu{
+        display: block;
+        font-size: 30px;
+        color: #000;
+    }
+    .header-bg .menu{
+        color: #fff;
+    }
+    header:hover{
+        background: #fff;
+    }
+    .header-bg:hover .menu{
+        color: #000;
+    }
+    #listmenu{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        background: #fff;
+        box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+        overflow: hidden;
+        max-height: 0;
+        transition: 0.5s;
+    }
+#listmenu li{
+    display: block;
+}
+#listmenu li a{
+    color: #000;
+    line-height: 3em;
+    color: #626262;
+    font-size: 1rem;
+}
+
+.carousel-img, .carousel-second-img, .carousel-third-img{
+width: 100%;
+height: 500px;
+margin-top: 20px;
+}
+.carousel-text{
+width: 100%;
+padding-top: 100px;
+padding-left: 20px;
+}
+.carousel-text h1{
+color: #00A99D;
+font-size: 35px;
+}
+.carousel-text p{
+color: #fff;
+font-weight: 400;
+line-height: 1.8em;
+text-align: justify;
+font-size: 14px;
+}
+.service{
+    width: 90%;
+    
+}
+.news{
+    width: 90%;
+    margin: 100px auto;
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
